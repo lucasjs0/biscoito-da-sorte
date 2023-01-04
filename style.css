@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: white;
+  width: min(42.8rem, 90%);
+  height: min(42.4rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .8);
+  border-radius: .5rem;
+  margin-top: -12rem;
+  text-align: center;
+}
+
+
+/* Screen 1*/
+.screen1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 2.9rem;
+  width: 25.8rem;
+  color: #34355B;
+  margin-bottom: 1.4rem;
+}
+
+.screen1 p  {
+  font-family: "Dm Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #34355B;
+  margin-bottom: 2rem;
+}
+
+.fortuneCookie:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.hide {
+  display: none;
+}
+
+/* Screen 2 */
+.mainLarger {
+  padding: 4.8rem 6.4rem;
+  width: min(42.8rem, 90%);
+  height: min(56.4rem, 90%);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 2.9rem;
+  width: 29.7rem;
+  color: #34355B;
+  margin-bottom: 1.7rem;
+}
+
+.fortune {
+  padding: 1rem;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+  color: black;
+  margin-bottom: 1.7rem;
+
+  animation: grow 1.8s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+button {
+  margin-top: 1.7rem;
+  padding: 1.6rem;
+  width: 17.4rem;
+  height: 5.2rem;
+  border: none;
+  border-radius: .4rem;
+  background: #FF9500;
+  color: white;
+  font-family: 'DM Sans';
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+button:hover {
+  background: #a36002;
+}
+
+/* Animations */
+@keyframes shake {
+  0% {
+    transform: translate(.1rem, .1rem) rotate(0deg);
+  }
+  10% {
+    transform: translate(-.1rem, -.2rem) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-.3rem, 0) rotate(1deg);
+  }
+  30% {
+    transform: translate(.3rem, .2rem) rotate(0deg);
+  }
+  40% {
+    transform: translate(.1rem, -.1rem) rotate(1deg);
+  }
+  50% {
+    transform: translate(-.1rem, .2rem) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-.3rem, .1rem) rotate(0deg);
+  }
+  70% {
+    transform: translate(.3rem, .1rem) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-.1rem, -.1rem) rotate(1deg);
+  }
+  90% {
+    transform: translate(.1rem, .2rem) rotate(0deg);
+  }
+  100% {
+    transform: translate(.1rem, -.2rem) rotate(-1deg);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: translateY(16rem) scale(0.2);
+  }
+  to {
+      transform: translateY(1) scale(1);
+  }
+}
